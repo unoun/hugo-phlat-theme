@@ -1,0 +1,5 @@
+<ul class="list-inline" style="margin-top: 15px; margin-left: 0px">
+    {{ range .Params.tags }}
+        <li style="background-color: pink; padding: 3px 10px; margin-bottom: 5px"><a href="{{ "/tags/" | absURL }}{{ . | urlize }}">{{ . }}</a></li>
+    {{ end }}
+</ul>
