@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    {{ partial "head.html" . }}
+    <body>
+        {{ partial "navigation/navigation.html" . }}
+        <div id="top" class="container">
+            <div class="row" id="content-main">
+                <div class="col-md-8">
+                    {{ .Render "single.content" }}
+                </div>
+                <div class="col-md-4">
+                    {{ partial "widgets/sidebar/search.html" . }}
+                    {{ partial "widgets/sidebar/recent.html" . }}
+                    {{ partial "widgets/sidebar/categories.html" . }}
+                    {{ partial "widgets/sidebar/donate.html" . }}
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-xs-6">
+                        <ul class="list-inline">
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Newsletter</a></li>
+                            <li><a href="">Sponsors</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-xs-6">
+                        {{ partial "widgets/footer/social.html" . }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>
+                            Phlat theme designed and built by <a href="http://www.nraboy.com">Nic Raboy</a> in San Francisco, California.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div id="back-to-top" class="hidden">
+            <a href="#top" class="well well-sm" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+                <i class="glyphicon glyphicon-chevron-up"></i> Back to Top
+            </a>
+        </div>
+        <script src="/js/jquery-2.2.1.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+        <script>
+            if(($(window).height() + 100) < $(document).height()) {
+                $('#back-to-top').removeClass('hidden').affix({
+                    offset: {
+                        top: 100
+                    }
+                });
+            }
+        </script>
+    </body>
+</html>

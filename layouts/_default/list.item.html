@@ -1,0 +1,15 @@
+{{ range .Data.Pages }}
+    <div class="row">
+        <div class="col-md-12 content-card">
+            <h2>{{ .Title }}</h2>
+            {{ if eq .Type "post" }}
+                <ul class="list-inline">
+                    <li><i class="fa fa-calendar"></i>{{ .Date.Format "January 2, 2006" }}</li>
+                    <li><i class="fa fa-user"></i>Test</li>
+                </ul>
+            {{ end }}
+            <p>{{ .Summary }}</p>
+            <a class="btn btn-custom" href="{{ .Permalink }}" role="button">Read More</a>
+        </div>
+    </div>
+{{ end }}
