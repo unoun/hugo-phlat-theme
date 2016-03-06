@@ -10,12 +10,11 @@
             <a class="navbar-brand" href="/">{{ .Site.Title }}</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-            {{ $currentNode := . }}
             <ul class="nav navbar-nav navbar-right">
                 {{ range .Site.Menus.header }}
-                    <li class="{{ if $currentNode.IsMenuCurrent "header" . }}active{{ end }}">
+                    <li>
                         <a href="{{ .URL }}">
-                            {{ .Name }} {{ if $currentNode.IsMenuCurrent "header" . }}<span class="sr-only">(current)</span>{{ end }}
+                            {{ .Name }}
                         </a>
                     </li>
                 {{ end }}

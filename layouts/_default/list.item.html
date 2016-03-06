@@ -1,14 +1,12 @@
-{{ range .Data.Pages }}
+{{ range where .Data.Pages "Type" "post" }}
     <div class="row">
         <div class="col-md-12 content-card">
-            <h2>{{ .Title }}</h2>
-            {{ if eq .Type "post" }}
-                <ul class="list-inline">
-                    <li><i class="fa fa-calendar"></i>{{ .Date.Format "January 2, 2006" }}</li>
-                    <li><i class="fa fa-user"></i>Test</li>
-                </ul>
-            {{ end }}
-            <p>{{ .Summary }}</p>
+            <h1>{{ .Title }}</h1>
+            <ul class="list-inline">
+                <li><i class="fa fa-calendar"></i>{{ .Date.Format "January 2, 2006" }}</li>
+                <li><i class="fa fa-user"></i>{{ .Params.author }}</li>
+            </ul>
+            {{ .Summary }}
             <a class="btn btn-custom" href="{{ .Permalink }}" role="button">Read More</a>
         </div>
     </div>
