@@ -7,6 +7,7 @@
             <div class="row" id="content-main">
                 <div class="col-md-8">
                     {{ .Render "single.content" }}
+                    {{ partial "disqus.html" . }}
                 </div>
                 <div class="col-md-4">
                     {{ partial "widgets/sidebar/search.html" . }}
