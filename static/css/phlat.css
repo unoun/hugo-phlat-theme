@@ -159,8 +159,8 @@ body {
 footer {
     background-color: #dddddd;
     margin-top: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 0px;
 }
 
 footer .container .row:not(:last-of-type) {
