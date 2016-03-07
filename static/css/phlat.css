@@ -63,6 +63,10 @@ body {
     border-top: 3px solid #337ab7;
 }
 
+.content-card .meta a {
+    color: #000000;
+}
+
 .content-card h1 {
     margin-bottom: 20px;
     margin-top: 0px;
@@ -82,6 +86,25 @@ body {
 .content-card .btn {
     border-radius: 0;
     margin-top: 15px;
+}
+
+.content-card .tags li {
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 12px;
+}
+
+.content-card .tags a {
+    background-color: #dddddd;
+    padding: 3px 10px;
+    margin-bottom: 5px;
+    display: block;
+    color: #ffffff;
+}
+
+.content-card .tags a:hover {
+    background-color: #337ab7;
+    text-decoration: none;
 }
 
 .btn-custom {
@@ -148,8 +171,40 @@ footer .list-inline li {
     margin-right: 15px;
 }
 
-footer #social-media {
+footer .links li {
+    margin-bottom: 10px;
+}
+
+footer .links a {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer .social-media {
     text-align: right;
+}
+
+footer .social-media li {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: 0px;
+    margin-bottom: 5px;
+    border: 1px solid #cccccc;
+}
+
+footer .social-media a {
+    background-color: #f2f2f2;
+    display: block;
+    padding: 10px;
+}
+
+footer .social-media a:hover {
+    background-color: #ffffff;
+}
+
+footer .social-media .fa {
+    padding-right: 0px;
 }
 
 footer a {

@@ -1,16 +1,16 @@
 <div class="col-md-4 col-xs-6">
-    <div id="social-media">
+    <ul class="list-inline social-media">
         {{ with .Site.Params.twitter }}
-            <a href="{{ . }}"><i class="fa fa-twitter-square fa-2x"></i></a>
+            <li><a href="{{ . }}"><i class="fa fa-twitter fa-lg"></i></a></li>
         {{ end }}
         {{ with .Site.Params.googleplus }}
-            <a href="{{ . }}"><i class="fa fa-google-plus-square fa-2x"></i></a>
+            <li><a href="{{ . }}"><i class="fa fa-google-plus-square fa-lg"></i></a></li>
         {{ end }}
         {{ with .Site.Params.linkedin }}
-            <a href="{{ . }}"><i class="fa fa-linkedin-square fa-2x"></i></a>
+            <li><a href="{{ . }}"><i class="fa fa-linkedin fa-lg"></i></a></li>
         {{ end }}
         {{ with .Site.Params.youtube }}
-            <a href="{{ . }}"><i class="fa fa-youtube-square fa-2x"></i></a>
+            <li><a href="{{ . }}"><i class="fa fa-youtube fa-lg"></i></a></li>
         {{ end }}
-    </div>
+    </ul>
 </div>
