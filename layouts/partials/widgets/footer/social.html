@@ -12,5 +12,8 @@
         {{ with .Site.Params.youtube }}
             <li><a href="{{ . }}"><i class="fa fa-youtube fa-lg"></i></a></li>
         {{ end }}
+        {{ with .Site.Params.paypal }}
+            <li><a href="{{ . }}"><i class="fa fa-paypal fa-lg"></i></a></li>
+        {{ end }}
     </ul>
 </div>

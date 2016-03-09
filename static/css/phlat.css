@@ -182,21 +182,28 @@ footer .links a {
 }
 
 footer .social-media {
-    text-align: right;
+    text-align: left;
+    /*margin-right: -5px;*/
 }
 
 footer .social-media li {
     padding-left: 0px;
     padding-right: 0px;
     margin-right: 0px;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
     border: 1px solid #cccccc;
+    width: 42px;
+    height: 42px;
+    text-align: center;
+    display: inline;
+    float: right;
 }
 
 footer .social-media a {
     background-color: #f2f2f2;
     display: block;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 footer .social-media a:hover {
