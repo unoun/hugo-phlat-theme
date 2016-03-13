@@ -183,7 +183,6 @@ footer .links a {
 
 footer .social-media {
     text-align: left;
-    /*margin-right: -5px;*/
 }
 
 footer .social-media li {
@@ -237,4 +236,10 @@ footer a:hover {
     position: fixed; /* keeps it on the bottom once in view */
     bottom: 18px;
     right: 10px;
+}
+
+pre {
+    border-radius: 0px;
+    padding: 0px;
+    border: none;
 }
