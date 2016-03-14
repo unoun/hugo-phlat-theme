@@ -16,4 +16,13 @@
         });
     }
 </script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+    {{ with .Site.Params.google_adsense }}
+        //$(".content-card p:nth-of-type(2)").after('<p><ins class="adsbygoogle" style="display:inline-block;width:100%;min-height:50px;" data-ad-client="{{ . }}" data-ad-slot="6765288764"></ins></p>');
+    {{ end }}
+    [].forEach.call(document.querySelectorAll('.adsbygoogle'), function() {
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    });
+</script>
 {{ partial "googleanalytics.html" . }}
