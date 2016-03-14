@@ -7,7 +7,7 @@ licenselink = "https://github.com/nraboy/hugo-phlat-theme/blob/master/LICENSE.md
 description = "A flat theme for the Hugo static website engine"
 homepage = "https://www.nraboy.com/"
 tags = ["flat", "bootstrap", "font-awesome"]
-features = ["", ""]
+features = ["responsive", "mobile-friendly"]
 min_version = 0.14
 
 [author]
