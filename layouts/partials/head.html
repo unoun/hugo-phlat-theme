@@ -2,7 +2,10 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {{ .Hugo.Generator }}
-    <title> {{ .Title }} &middot; {{ .Site.Title }} </title>
+    <title>{{ .Title }} &middot; {{ .Site.Title }}</title>
+    <meta name="description" content="{{ .Description }}" />
+    <meta name="keywords" content='{{ with .Params.tags }}{{ delimit . "," }}{{ end }}' />
+    <meta name="author" content="{{ .Params.author }}" />
     <link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/highlightjs-themes/androidstudio.css" />
