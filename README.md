@@ -58,20 +58,34 @@ Everything that comes next is optional:
     url = "/"
 
 [[menu.header]]
-        name = "Resources"
-        weight = 2
-        url = "/resources/"
+    name = "Resources"
+    weight = 2
+    url = "/resources/"
 
 [[menu.header]]
     name = "Contact"
     weight = 3
     url = "/contact/"
 
+[[menu.footer]]
+    name = "Privacy Policy"
+    weight = 1
+    url = "/privacy-policy/"
+
+[[menu.footer]]
+    name = "Sponsors"
+    weight = 2
+    url = "/sponsors/"
+
 [params]
+    google_analytics = "UA-XXXXXXX-YY"
+    google_adsense = "ca-pub-XXXXXXXX"
+    disqus = "site_name_here"
     twitter = "https://www.twitter.com/nraboy"
     googleplus = ""
     linkedin = ""
     youtube = ""
+    paypal = ""
 ```
 
 ## About the Author

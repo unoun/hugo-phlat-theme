@@ -73,6 +73,10 @@ body {
     font-size: 30px;
 }
 
+.content-card h1 a {
+    color: inherit;
+}
+
 .content-card h2 {
     margin-bottom: 15px;
     margin-top: 15px;
