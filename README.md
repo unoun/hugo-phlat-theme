@@ -119,3 +119,7 @@ Many of these parameters are social media links that appear at the bottom right 
 Phlat was designed and built by [Nic Raboy](https://www.nraboy.com) in San Francisco, California.
 
 If you like this theme let me know!  You can reach me easiest on Twitter at [@nraboy](https://www.twitter.com).
+
+## License
+
+This theme is released under the MIT license.  For more information read the [License](LICENSE.md).
