@@ -254,6 +254,7 @@ footer a:hover {
 
 pre {
     border-radius: 0px;
-    padding: 0px;
+    padding: 10px;
     border: none;
+    background-color: #282b2e;
 }
