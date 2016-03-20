@@ -67,6 +67,38 @@ body {
     color: #000000;
 }
 
+.content-card .share li {
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 12px;
+}
+
+.content-card .share a {
+    padding: 7px 10px;
+    margin-bottom: 5px;
+    display: block;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.content-card .share a:hover {
+    text-decoration: none;
+}
+
+.content-card .facebook-share a { background-color: #425F9C; }
+.content-card .googleplus-share a { background-color: #DB4437; }
+.content-card .twitter-share a { background-color: #1da1f2; }
+.content-card .reddit-share a { background-color: #FF4602; }
+.content-card .linkedin-share a { background-color: #1B86BC; }
+.content-card .stumbleupon-share a { background-color: #EB4924; }
+
+.content-card .facebook-share a:hover { background-color: #2d4373; }
+.content-card .googleplus-share a:hover { background-color: #c63224; }
+.content-card .twitter-share a:hover { background-color: #0085be; }
+.content-card .reddit-share a:hover { background-color: #cc3700; }
+.content-card .linkedin-share a:hover { background-color: #005983; }
+.content-card .stumbleupon-share a:hover { background-color: #ca3412; }
+
 .content-card h1 {
     margin-bottom: 20px;
     margin-top: 0px;
