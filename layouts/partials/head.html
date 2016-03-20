@@ -3,6 +3,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {{ .Hugo.Generator }}
     <title>{{ .Title }} &middot; {{ .Site.Title }}</title>
+    {{ with .Site.Params.bing_webmaster }}
+        <meta name="msvalidate.01" content="{{ . }}" />
+    {{ end }}
+    {{ with .Site.Params.google_webmaster }}
+        <meta name="google-site-verification" content="{{ . }}" />
+    {{ end }}
+    {{ with .Site.Params.alexa }}
+        <meta name="alexaVerifyID" content="{{ . }}" />
+    {{ end }}
     <meta name="description" content="{{ .Description }}" />
     <meta name="keywords" content='{{ with .Params.tags }}{{ delimit . "," }}{{ end }}' />
     <meta name="author" content="{{ .Params.author }}" />
