@@ -29,9 +29,14 @@ theme = "hugo-phlat-theme"
     url = "/privacy-policy/"
 
 [params]
+    keywords = ["default", "keywords", "if", "no", "front", "matter"]
+    description = "A description that will appear as a default if front matter does not exist"
     google_analytics = "UA-XXXXX-YY"
     google_adsense = "ca-pub-XXXXXX"
     disqus = "shortname"
+    google_webmaster = ""
+    bing_webmaster = ""
+    alexa = ""
     twitter = "https://www.twitter.com/NAME_HERE"
     googleplus = "https://plus.google.com/NAME_HERE"
     linkedin = "https://www.linkedin.com/in/NAME_HERE"

@@ -55,6 +55,10 @@ title = "Own the Web"
 [taxonomies]
     tag = "tags"
     category = "categories"
+
+[params]
+    keywords = ["default", "keywords", "if", "no", "front", "matter"]
+    description = "A description that will appear as a default if front matter does not exist"
 ```
 
 ### Optional Parameters
