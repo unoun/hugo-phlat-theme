@@ -244,6 +244,10 @@ footer .social-media li {
     float: right;
 }
 
+footer .social-media li:not(:last-of-type) {
+    border-left: none;
+}
+
 footer .social-media a {
     background-color: #f2f2f2;
     display: block;

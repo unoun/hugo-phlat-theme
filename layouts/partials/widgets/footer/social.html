@@ -1,19 +1,34 @@
 <div class="col-md-4 col-xs-6">
     <ul class="list-inline social-media">
-        {{ with .Site.Params.twitter }}
+        {{ with .Site.Social.twitter }}
             <li><a href="{{ . }}"><i class="fa fa-twitter fa-lg"></i></a></li>
         {{ end }}
-        {{ with .Site.Params.googleplus }}
+        {{ with .Site.Social.googleplus }}
             <li><a href="{{ . }}"><i class="fa fa-google-plus-square fa-lg"></i></a></li>
         {{ end }}
-        {{ with .Site.Params.linkedin }}
+        {{ with .Site.Social.linkedin }}
             <li><a href="{{ . }}"><i class="fa fa-linkedin fa-lg"></i></a></li>
         {{ end }}
-        {{ with .Site.Params.youtube }}
+        {{ with .Site.Social.youtube }}
             <li><a href="{{ . }}"><i class="fa fa-youtube fa-lg"></i></a></li>
         {{ end }}
-        {{ with .Site.Params.paypal }}
+        {{ with .Site.Social.paypal }}
             <li><a href="{{ . }}"><i class="fa fa-paypal fa-lg"></i></a></li>
+        {{ end }}
+        {{ with .Site.Social.instagram }}
+            <li><a href="{{ . }}"><i class="fa fa-instagram fa-lg"></i></a></li>
+        {{ end }}
+        {{ with .Site.Social.wordpress }}
+            <li><a href="{{ . }}"><i class="fa fa-wordpress fa-lg"></i></a></li>
+        {{ end }}
+        {{ with .Site.Social.pinterest }}
+            <li><a href="{{ . }}"><i class="fa fa-pinterest fa-lg"></i></a></li>
+        {{ end }}
+        {{ with .Site.Social.email }}
+            <li><a href="{{ . }}"><i class="fa fa-envelope fa-lg"></i></a></li>
+        {{ end }}
+        {{ with .Site.Social.reddit }}
+            <li><a href="{{ . }}"><i class="fa fa-reddit fa-lg"></i></a></li>
         {{ end }}
     </ul>
 </div>
