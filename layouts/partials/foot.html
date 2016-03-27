@@ -30,4 +30,6 @@
         });
     }
 </script>
-{{ partial "googleanalytics.html" . }}
+{{ if not (in (printf "%#v" .Site.BaseURL) "localhost") }}
+    {{ partial "googleanalytics.html" . }}
+{{ end }}
